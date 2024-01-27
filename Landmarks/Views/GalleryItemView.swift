@@ -13,32 +13,15 @@ struct GalleryItemView: View {
     
     var body: some View {
         
-        VStack(spacing: 5) {
-            HStack {
-                Image(item.image)
-                    .resizable()
-                    .frame(height: 125)
-                    .scaledToFit()
-                    .clipShape(
-                        Circle()
-                    )
-
-                Spacer()
-            }
-            
-            Text(item.name)
-                .font(.headline)
-                .multilineTextAlignment(.center)
-
-            Spacer()
-            
-            RecommendationView(item: item)
-            
-        }
-        .padding()
+        Text(item.name)
         
     }
 }
+
+#Preview {
+    GalleryItemView(item: sudburyNickel)
+}
+
 
 #Preview {
     GalleryView()
