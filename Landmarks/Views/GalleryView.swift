@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct GalleryView: View {
+    
+    let twoColumns = [
+        GridItem(.adaptive(minimum: 100, maximum: 200), alignment: .top),
+        GridItem(.adaptive(minimum: 100, maximum: 200), alignment: .top),
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: twoColumns) {
+                    ForEach(allLandmarks) { currentLandMark in
+                        
+                        NavigationLink {
+                            DetailView(item: currentLandMark)
+                        } label: {
+                            GalleryItemView(item: currentLandMark)
+                        }
+                        .tint(.black)
+
+                        
+                    }
+                }
+            }
+            .navigationTitle("Landmarks")
+        }
     }
 }
 

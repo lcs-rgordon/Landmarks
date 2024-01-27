@@ -14,6 +14,7 @@
 		8117ADE92B6482FF004F2C8C /* GalleryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117ADE82B6482FF004F2C8C /* GalleryItemView.swift */; };
 		8117ADEB2B648318004F2C8C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117ADEA2B648318004F2C8C /* Landmark.swift */; };
 		8117ADED2B648336004F2C8C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117ADEC2B648336004F2C8C /* DetailView.swift */; };
+		8117ADEF2B64907A004F2C8C /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117ADEE2B64907A004F2C8C /* RecommendationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8117ADE82B6482FF004F2C8C /* GalleryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItemView.swift; sourceTree = "<group>"; };
 		8117ADEA2B648318004F2C8C /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		8117ADEC2B648336004F2C8C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8117ADEE2B64907A004F2C8C /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				8117ADE62B6482E3004F2C8C /* GalleryView.swift */,
 				8117ADE82B6482FF004F2C8C /* GalleryItemView.swift */,
 				8117ADEC2B648336004F2C8C /* DetailView.swift */,
+				8117ADEE2B64907A004F2C8C /* RecommendationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				8117ADE72B6482E3004F2C8C /* GalleryView.swift in Sources */,
 				8117ADED2B648336004F2C8C /* DetailView.swift in Sources */,
 				8117ADEB2B648318004F2C8C /* Landmark.swift in Sources */,
+				8117ADEF2B64907A004F2C8C /* RecommendationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

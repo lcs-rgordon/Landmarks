@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    let item: Landmark
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            Image(item.image)
+                .resizable()
+                .scaledToFit()
+            
+            HStack {
+                RecommendationView(item: item)
+                Spacer()
+            }
+            .padding(.horizontal)
+            
+            Text(item.description)
+            .padding(.horizontal)
+        }
+        .navigationTitle("Sudbury Nickel")
     }
 }
 
 #Preview {
-    DetailView()
+    NavigationStack {
+        DetailView(item: sudburyNickel)
+    }
 }
