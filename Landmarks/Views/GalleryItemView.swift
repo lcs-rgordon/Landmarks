@@ -17,8 +17,8 @@ struct GalleryItemView: View {
             HStack {
                 Image(item.image)
                     .resizable()
+                    .scaledToFill()
                     .frame(height: 125)
-                    .scaledToFit()
                     .clipShape(
                         Circle()
                     )

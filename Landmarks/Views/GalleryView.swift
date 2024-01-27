@@ -26,7 +26,7 @@ struct GalleryView: View {
                         } label: {
                             GalleryItemView(item: currentLandMark)
                         }
-                        .tint(.black)
+                        .tint(.primary)
 
                         
                     }
