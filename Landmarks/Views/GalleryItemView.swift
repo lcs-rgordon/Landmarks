@@ -13,19 +13,16 @@ struct GalleryItemView: View {
     
     var body: some View {
         
-        VStack(spacing: 5) {
-            HStack {
-                Image(item.image)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 125)
-                    .clipShape(
-                        Circle()
-                    )
+        VStack(spacing: 0) {
+            Image(item.image)
+                .resizable()
+                .scaledToFill()
+                .frame(height: 125)
+                .clipShape(
+                    Circle()
+                )
+                .padding(.bottom, 10)
 
-                Spacer()
-            }
-            
             Text(item.name)
                 .font(.headline)
                 .multilineTextAlignment(.center)
