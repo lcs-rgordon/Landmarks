@@ -26,7 +26,7 @@ struct DetailView: View {
             Text(item.description)
             .padding(.horizontal)
         }
-        .navigationTitle("Sudbury Nickel")
+        .navigationTitle(item.name)
     }
 }
 
